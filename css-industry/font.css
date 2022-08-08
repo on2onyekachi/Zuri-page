@@ -1,0 +1,32 @@
+@font-face {
+  font-family: 'Graphik';
+  src: url('./fonts/Graphik-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-display: fallback;
+  font-style: normal;
+  unicode-range: U+0020-007F;
+}
+@font-face {
+  font-family: 'Graphik';
+  src: url('./fonts/Graphik-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-display: fallback;
+  font-style: normal;
+  unicode-range: U+0020-007F;
+}
+@font-face {
+  font-family: 'Graphik';
+  src: url('./fonts/Graphik-Semibold.woff2') format('woff2');
+  font-weight: 600;
+  font-display: fallback;
+  font-style: normal;
+  unicode-range: U+0020-007F;
+}
+
+@font-face {
+  font-family: 'Sequel Sans';
+  src: url('./fonts/Sequel Sans Black Head.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: fallback;
+}
