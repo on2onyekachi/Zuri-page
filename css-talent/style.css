@@ -1,0 +1,1359 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Graphik";
+}
+
+header{
+    position: fixed;
+    background-color: #fff;
+    z-index: 2;
+    width: 100%;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr .3fr;
+    grid-template-rows: .7fr;
+    grid-template-areas: 
+    'header-hero talents-btn';
+    padding-bottom: 5px;
+}
+
+.header-hero{
+    grid-area: header-hero;
+    padding: 15px 23px;
+}
+
+.talents-btn{
+    grid-area: talents-btn;
+}
+
+.talents-btn a{
+    float: right;
+    text-align: center;
+    border: 1px solid red;
+    height: 70%;
+    color: white;
+    background-color: #e7332b;
+    padding: 3px 38px;
+    font-size: 16px;
+    margin: 7px 23px 0 0;
+    border-bottom-right-radius: 8px;
+    letter-spacing: 0.05em;
+}
+
+.nav-menu{
+    display: none;
+}
+
+.talent-intro-home{
+    position: relative;
+}
+
+.line{
+    display: none;
+}
+.talent-intro-grid-container{
+    padding-top: 130px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: .5fr .5fr;
+    grid-template-areas:
+    'vested-and-trusted'
+    'talent-image';
+    gap: 20px;
+    margin: 0 25px;
+    text-align: center;
+}
+
+.vested-and-trusted{
+    grid-area: vested-and-trusted;
+}
+
+.text-content{
+}
+
+.text-content h1{
+    font-size: 40px;
+    color: #161617;
+    line-height: 1.2;
+    padding-bottom: 15px;
+    position: relative;
+}
+
+.text-content h1 span{
+    color: #e7332b;
+}
+
+.text-content h1 .thick{
+    position: absolute;
+    top: 60%;
+    right: 4%;
+    width: 100px;
+}
+
+@media only screen and (min-width: 403px){
+    .thick{
+        position: absolute;
+        right: 5%;
+        bottom: 0;
+        width: 100px;
+    }
+}
+
+@media only screen and (min-width: 434px){
+    .thick{
+        position: absolute;
+        right: 30%;
+        bottom: 0;
+        width: 100px;
+    }
+}
+
+.text-content p{
+    margin: 20px 4px 0 4px;
+    font-size: 16px;
+    color: #787878;
+    line-height: 1.4;
+    font-weight: normal;
+}
+
+.btn-div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    text-align: center;
+    margin: 30px auto 0;
+}
+
+.btn{
+    border: none;
+    outline: none;
+}
+
+.btn-red{
+    flex: 50%;
+    background-color: #e7332b;
+    color: #fff;
+    padding: 10px 35px;
+    height: 100%;
+    border-bottom-right-radius: 8px;
+    letter-spacing: 0.00938em;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 500;
+    box-shadow: #0000004d 0px 2px 4px -1px;
+}
+
+.btn-red:hover{
+    box-shadow: rgb(0 0 0 / 14%) 0px 4px 5px 0px, rgb(0 0 0 / 12%) 0px 1px 7px 0px;
+    transition: box-shadow .1s ease-in-out;
+}
+
+.btn-grey{
+    flex: 50%;
+    background-color: #585858;
+    padding: 10px 25px;
+    height: 100%;
+    border-bottom-right-radius: 8px;
+    letter-spacing: 0.00938em;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 500;
+    box-shadow: rgb(0 0 0 / 30%) 0px 2px 4px -1px;
+}
+
+.btn-grey:hover{
+    box-shadow: rgb(0 0 0 / 14%) 0px 4px 5px 0px, rgb(0 0 0 / 12%) 0px 1px 7px 0px;
+    transition: box-shadow .1s ease-in-out;
+}
+
+@media only screen and (min-width: 513px){
+    .grid{
+        grid-template-columns: 1.5fr 1fr;
+    }
+
+    .btn-red{
+        padding: 10px 55px;
+    }
+
+    .btn-grey{
+        padding: 10px 45px;
+    }
+
+}
+
+.talent-image{
+    grid-area: talent-image;
+}
+
+.talent-image img{
+    width: 100%;
+}
+
+.impact-section-one{
+    margin-top: 100px;
+    background-color: hsla(3, 80%, 54%, 0.15);
+    background-image: url("../images-talent/bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: .2fr .2fr;
+    grid-template-areas: 
+    'impact-text'
+    'impact-image';
+    gap: 120px;
+    padding: 90px 26px;
+}
+
+.impact-text{
+    grid-area: impact-text;
+}
+
+.impact-text h2{
+    font-size: 28px;
+    color: #161617;
+    margin-bottom: 10px;
+    line-height: 1.2;
+}
+
+.impact-text h2 span{
+    color: #e7332b;
+}
+
+.impact-text p span{
+    display: block;
+}
+
+.impact-text p span:first-child{
+    font-size: 16px;
+    font-weight: 600;
+    color: #161617;
+    margin-bottom: 10px;
+}
+
+.impact-text p span:last-child{
+    color: #787878;
+    margin-bottom: 19px;
+}
+
+.impact-text .countries{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+
+.impact-text .countries img{
+    background-color: #fff;
+    border-radius: 6px;
+}
+
+.impact-text .countries .ger img{
+    width: 75%;
+    padding: 10px;
+}
+
+.impact-text .countries .eng img{
+    width: 72%;
+    padding: 10px;
+}
+.impact-text .countries .ind img{
+    width: 68%;
+    padding: 10px 12px;
+}
+.impact-text .countries .nig img{
+    width: 68%;
+    padding: 10px 11px;
+}
+.impact-text .countries .usa img{
+    width: 63%;
+    padding: 10px 12px;
+}
+
+.impact-image{
+    grid-area: impact-image;
+    text-align: center;
+}
+
+.impact-image img{
+    width: 90%;
+}
+
+.impact-section-two{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    'skills'
+    'companies';
+    gap: 60px;
+    margin-top: 30px;
+    padding: 90px 25px;
+}
+
+.line-1{
+    display: none;
+}
+
+@media only screen and (min-width: 400px){
+    .impact-section-two{
+        padding: 90px 38px;
+    }
+}
+
+.skills{
+    grid-area: skills;
+}
+
+.skills h2{
+    font-size: 28px;
+    color: #161617;
+    margin-bottom: 55px;
+}
+
+.skills h2 span{
+    color: #e7332b;
+}
+
+.tech-skills-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    'ui-ux backend-dev'
+    'devops-engineers frontend-dev';
+    row-gap: 10px;
+    column-gap: 25px;
+    text-align: center;
+}
+
+.ui-ux{
+    grid-area: ui-ux;
+    padding: 7px;
+}
+
+.ui-ux:hover,
+.backend-dev:hover,
+.devops-engineers:hover,
+.frontend-dev:hover{
+    transform: translateY(-15px);
+}
+
+.backend-dev{
+    grid-area: backend-dev;
+    padding: 7px;
+}
+
+.devops-engineers{
+    grid-area: devops-engineers;
+    padding: 7px;
+}
+
+.frontend-dev{
+    grid-area: frontend-dev;
+    padding: 7px;
+}
+
+.ui-ux,
+.backend-dev,
+.devops-engineers,
+.frontend-dev{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 33px;
+    color: #787878;
+    letter-spacing: 0.00938em;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 8px 30px hsla(0,0%,48%,.16);
+    display: grid;
+    align-items: center;
+    transition: .3s linear;
+    cursor: pointer;
+}
+
+.companies{
+    grid-area: companies;
+}
+
+.companies h2{
+    font-size: 28px;
+    color: #161617;
+    margin-bottom: 40px;
+}
+
+.skills h2 span{
+    color: #e7332b;
+}
+
+.companies-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    'github microsoft'
+    'reskill-americans flutterwave'
+    'google career-transitioners';
+    row-gap: 10px;
+    column-gap: 20px;
+    text-align: center;
+}
+
+.github{
+    grid-area: github;
+    padding: 7px;
+}
+
+.github:hover,
+.reskill-americans:hover,
+.google:hover,
+.microsoft:hover,
+.flutterwave:hover,
+.career-transitioners:hover{
+    transform: translateY(-15px);
+}
+
+.github,
+.reskill-americans,
+.google,
+.microsoft,
+.flutterwave,
+.career-transitioners{
+    display: grid;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 33px;
+    color: #787878;
+    letter-spacing: 0.00938em;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 8px 30px hsla(0,0%,48%,.16);
+    transition: .3s linear;
+    cursor: pointer;
+}
+
+.reskill-americans{
+    grid-area: reskill-americans;
+    padding: 7px;
+}
+
+.google{
+    grid-area: google;
+    padding: 7px;
+}
+
+.microsoft{
+    grid-area: microsoft;
+    padding: 7px;
+}
+
+.flutterwave{
+    grid-area: flutterwave;
+    padding: 7px;
+}
+
+.career-transitioners{
+    grid-area: career-transitioners;
+    padding: 7px;
+}
+
+.why-us{
+    margin-top: 30px;
+    padding: 90px 26px;
+    background-color: rgb(255, 248, 229);
+    position: relative;
+
+}
+
+.rope{
+    position: absolute;
+    top: 26%;
+    right: 4%;
+    width: 100%;
+}
+.why-us h2{
+    font-size: 28px;
+    text-align: center;
+    color: #161617;
+    margin-bottom: 75px;
+}
+
+.why-us h2 span{
+    color: #e7332b;
+}
+
+
+.card-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: .9fr .9fr .9fr .9fr .9fr;
+    grid-template-areas: 
+    'people'
+    'mech'
+    'hand'
+    'write'
+    'many';
+    gap: 20px;
+    margin-bottom: 80px;
+}
+
+.people{
+    grid-area: people;
+}
+
+.mech{
+    grid-area: mech;
+}
+
+.hand{
+    grid-area: hand;
+}
+
+.write{
+    grid-area: write;
+}
+
+.many{
+    grid-area: many;
+}
+
+.card{
+    padding: 50px 10px;
+    border-bottom-right-radius: 16px;
+    background-color: #fff;
+    text-align: center;
+    z-index: 1;
+}
+
+.card:hover{
+    background-color: rgb(22, 22, 23);
+    color: #fff;
+    font-weight: 600;
+}
+
+.people-image,
+.mech-image,
+.hand-image,
+.write-image,
+.many-image{
+    margin-bottom: 33px;
+}
+
+.people-image img,
+.mech-image img,
+.hand-image img,
+.write-image img,
+.many-image img{
+    width: 78px;
+}
+
+.people-text,
+.mech-text,
+.hand-text,
+.write-text,
+.many-text{
+    line-height: 22px;
+    letter-spacing: 0.00938em;
+    font-size: 15px;
+    font-weight: 400;
+    color: #787878;
+}
+
+.footer{
+    background-color: rgb(22, 22, 23);
+}
+
+.footer-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: .1fr .7fr;
+    grid-template-areas: 
+    'footer-logo'
+    'footer-links';
+    gap: 15px;
+    padding-top: 80px;
+    text-align: center;
+}
+
+.footer-logo{
+    grid-area: footer-logo;
+}
+
+.footer-links{
+    grid-area: footer-links;
+}
+
+.footer-links a img{
+    width: 40px;
+    padding-right: 10px;
+}
+
+.footer-links a:last-child img{
+    width: 51px;
+}
+
+.footer-container-1{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: .5fr 1fr;
+    grid-template-areas: 
+    'zuri-email'
+    'copyright';
+    gap: 15px;
+    padding-top: 30px;
+    text-align: center;
+}
+
+.zuri-email{
+    grid-area: zuri-email;
+}
+
+.zuri-email a{
+    font-size: 16px;
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: .01em;
+}
+
+.copyright{
+    grid-area: copyright;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: .01em;
+    padding-bottom: 20px;
+    line-height: 140%;
+}
+
+.copyright hr{
+    width: 90%;
+    text-align: center;
+    margin: 0 auto 20px;
+    border-width: 0px 0px thin;
+    border-color: gray;
+}
+
+@media only screen and (min-width: 577px){
+    .thick{
+        position: absolute;
+        right: 1%;
+        bottom: 0;
+        width: 100px;
+    }
+}
+@media only screen and (min-width: 600px){
+    .grid{
+        padding: 4px 10px;
+    }
+
+    .talent-intro-grid-container{
+        margin: 0 50px;
+    }
+
+   .thick{
+        position: absolute;
+        right: 31%;
+        bottom: 0;
+        width: 100px;
+    }
+
+    .impact-section-one{
+        padding: 90px 50px;
+    }
+
+    .impact-text .countries{
+        display: grid;
+        grid-template-columns: .8fr .8fr .8fr .8fr .8fr;
+        grid-template-rows: 1fr;
+        width: 90%;
+    }
+
+    .impact-text .countries .ger img{
+        width: 80%;
+        padding: 15px;
+    }
+    
+    .impact-text .countries .eng img{
+        width: 78%;
+        padding: 10px;
+    }
+    .impact-text .countries .ind img{
+        width: 73%;
+        padding: 10px 12px;
+    }
+    .impact-text .countries .nig img{
+        width: 73%;
+        padding: 10px 11px;
+    }
+    .impact-text .countries .usa img{
+        width: 68%;
+        padding: 10px 12px;
+    }
+    
+    .impact-image img{
+        width: 100%;
+    }
+
+    .impact-section-two{
+        padding: 90px 50px 10px;
+    }
+
+    .skills h2{
+       width: 85%;
+    }
+
+    .tech-skills-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        'ui-ux backend-dev devops-engineers'
+        'frontend-dev froo aofo';
+        row-gap: 15px;
+        column-gap: 25px;
+        text-align: center;
+    }
+
+    .companies-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: .5fr 1fr;
+        grid-template-areas: 
+        'github microsoft reskill-americans'
+        'flutterwave google career-transitioners';
+        row-gap: 15px;
+        column-gap: 15px;
+        text-align: center;
+    }
+    
+    .github,
+    .reskill-americans,
+    .google,
+    .microsoft,
+    .flutterwave,
+    .career-transitioners{
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 33px;
+        color: #787878;
+        letter-spacing: 0.00938em;
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 8px 25px hsla(0,0%,48%,.16);
+    }
+
+    .why-us{
+        margin-top: 40px;
+        padding: 90px 50px;
+        background-color: rgb(255, 248, 229);
+        position: relative;
+    }
+
+    .rope{
+        position: absolute;
+        top: 36%;
+        right: 40%;
+        width: 100%;
+    }
+
+    .card-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr .9fr .8fr;
+        grid-template-areas: 
+        'people mech'
+        'hand write'
+        'many many';
+        gap: 15px;
+        margin-bottom: 80px;
+    }
+
+    .card{
+        padding: 45px 10px 40px;
+    }
+
+    .people-image,
+    .mech-image,
+    .hand-image,
+    .write-image,
+    .many-image{
+        margin-bottom: 15px;
+    }
+
+    .footer{
+        padding: 0 20px;
+    }
+
+    .footer-container{
+        display: grid;
+        grid-template-columns: 1fr .8fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        'footer-logo footer-links';
+        gap: 15px;
+        text-align: center;
+    }
+
+    .footer-container-1{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: .8fr 1fr;
+        grid-template-areas: 
+        'zuri-email'
+        'copyright';
+        gap: 15px;
+        padding-top: 30px;
+        text-align: center;
+    }
+
+    .copyright hr{
+       width: 100%;
+    }    
+}
+
+@media only screen and (min-width: 601px){
+    .talent-intro-grid-container{
+        padding-top: 200px;
+        width: 70%;
+        margin: 0 auto;
+        gap: 70px;
+    }
+
+    .text-content p{
+        font-size: 19px;
+    }
+
+    .talent-image img{
+        width: 100%;
+    }
+
+    .impact-section-one{
+        gap: 70px;
+    }
+
+    .impact-text{
+        width: 70%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .impact-text h2{
+        font-size: 30px;
+        font-weight: 800;
+        line-height: 49px;
+    }
+
+    .impact-text p span:first-child,
+    .impact-text p span:last-child{
+        font-size: 19px;
+    }
+
+    .impact-text .countries{
+        margin: 0 auto;
+    }
+
+    .impact-image{
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .impact-image img{
+        width: 80%;
+    }
+
+    .why-us{
+        margin-top: 60px;
+        padding: 90px 70px;
+    }
+
+    .why-us h2{
+        font-size: 30px;
+    }
+
+    .skills h2{
+        text-align: center;
+        width: 100%;
+        font-size: 30px;
+    }
+    
+    .ui-ux,
+    .backend-dev,
+    .devops-engineers,
+    .frontend-dev{
+       font-size: 18px;
+        
+    }
+
+    .companies h2{
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .companies-container{
+        row-gap: 6px;
+        column-gap: 15px;
+        text-align: center;
+    }
+
+    .github,
+    .reskill-americans,
+    .google,
+    .microsoft,
+    .flutterwave,
+    .career-transitioners{
+        font-size: 18px;
+    }
+    
+    .card{
+        padding: 45px 30px 20px;
+    }
+    
+    .people-text,
+    .mech-text,
+    .hand-text,
+    .write-text,
+    .many-text{
+        line-height: 22px;
+        letter-spacing: 0.00938em;
+        font-size: 17px;
+        font-weight: 400;
+        color: #787878;
+    }
+
+    .footer{
+        padding: 0 30px;
+    }
+
+    .footer-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        'footer-logo footer-links';
+        gap: 15px;
+        text-align: center;
+    }
+
+    .footer-container .footer-links{
+        text-align: right;
+    }
+
+    .footer-container-1{
+        display: grid;
+        grid-template-columns: 1fr .22fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        'copyright zuri-email';
+        gap: 15px;
+        padding-top: 30px;
+        text-align: left;
+    }
+
+    .footer-container-1 .zuri-email{
+        text-align: right;
+    }
+
+    .copyright hr{
+       display: none;
+    }
+}
+
+@media only screen and (min-width: 745px){
+    .thick{
+        position: absolute;
+        right: 0px;
+        bottom: 0;
+        width: 100px;
+    }
+}
+
+@media only screen and (min-width: 805px){
+    .thick{
+        position: absolute;
+        right: 25px;
+        bottom: 0;
+        width: 100px;
+    }
+}
+
+@media only screen and (min-width: 891px){
+    .grid{
+        display: grid;
+        grid-template-columns: .7fr 1.3fr .5fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        'header-hero nav-menu talents-btn';
+        padding: 5px 70px 0px;
+    }
+
+    .header-hero{
+        padding: 15px 0;
+    }
+
+    .nav-menu{
+        display: block;
+        grid-area: nav-menu;
+        display: inline-block;
+        text-align: right;
+    }
+
+    .nav-menu .nav-item{
+        list-style-type: none;
+        display: inline-block;
+        padding: 20px 30px 0;
+    }
+
+    .nav-menu .nav-item .nav-link{
+        font-size: 17px;
+        padding-bottom: 20px;
+        padding-left: 5px;
+        padding-right: 5px;
+        color: #585858;
+        font-weight: 400;
+        display: block;
+    }
+
+    .nav-link.active{
+        border-bottom: 3px solid #e7332b;
+    }
+
+    .talent-intro-grid-container{
+        padding-top: 220px;
+        width: 60%;
+    }
+
+    .thick{
+        right: 0px;
+    }
+
+    .talents-btn a{
+        width: 160px;
+        float: right;
+    }
+
+    .card-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr .9fr .9fr;
+        grid-template-areas: 
+        'people mech'
+        'hand write'
+        'many many';
+        gap: 15px;
+        margin-bottom: 80px;
+    }
+    
+    .card{
+        padding: 50px 55px 40px;
+    }
+}
+
+@media only screen and (min-width: 900px){
+    .impact-section-one{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        'impact-text impact-image';
+        gap: 40px;
+        padding: 150px 70px;
+    }
+
+    .impact-text{
+        width: 100%;
+        text-align: left;
+    }
+
+    .impact-text h2{
+        line-height: normal;
+    }
+
+    .impact-text .countries{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        width: 100%;
+    }
+
+    .impact-text .countries .ger img{
+        width: 90%;
+        padding: 15px;
+    }
+    
+    .impact-text .countries .eng img{
+        width:88%;
+        padding: 10px;
+    }
+    .impact-text .countries .ind img{
+        width: 83%;
+        padding: 10px 12px;
+    }
+    .impact-text .countries .nig img{
+        width: 83%;
+        padding: 10px 11px;
+    }
+    .impact-text .countries .usa img{
+        width: 78%;
+        padding: 10px 12px;
+    }
+
+    .impact-image{
+        width: 100%;
+    }
+
+    .impact-image img{
+        width: 100%;
+    }
+
+    .skills{
+        margin-bottom: 20px;
+    }
+    .tech-skills-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        'ui-ux backend-dev devops-engineers frontend-dev';
+        column-gap: 25px;
+        text-align: center;
+    }
+
+    .companies-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        'github microsoft reskill-americans flutterwave google career-transitioners';
+        column-gap: 20px;
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 1000px){
+    .line{
+        position: absolute;
+        bottom: 22%;
+        right: 0;
+        z-index: -1;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    .grid{
+        padding: 5px 90px 0px;
+    }
+    
+    .talent-intro-grid-container{
+        padding-top: 220px;
+        display: grid;
+        align-items: center;
+        grid-template-columns: 1fr .8fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+        'vested-and-trusted talent-image';
+        gap: 102px;
+        margin: 0 90px;
+        text-align: left;
+        width: auto;
+    }
+
+    .text-content p{
+        font-size: 19px;
+        width: 407px;
+    }
+
+    .thick{
+        position: absolute;
+        top: 15%;
+        right: -10px;
+        width: 100px;
+    }
+
+    .btn-div{
+        grid-template-columns: 1fr 1.2fr;
+        gap: 20px;
+        margin-left: 0;
+        width: 430px;
+        text-align: left;
+    }
+
+    .btn-red{
+        padding: 12px 50px;
+    }
+
+    .btn-grey{
+        padding: 12px 45px;
+    }
+
+    .talent-image{
+        text-align: right;
+    }
+
+    .talent-image img{
+        width: 90%;
+    }
+
+    .line{
+        display: block;
+        position: absolute;
+        bottom: 24%;
+        right: 0;
+        z-index: -1;
+    }   
+
+    .impact-section-one{
+        background-color: transparent;
+        background-size: cover;
+        background-position: center center;
+        display: grid;
+        align-items: center;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        'impact-text impact-image';
+        gap: 40px;
+        padding: 150px 90px;
+
+    }
+
+    .impact-text{
+        width: auto;
+    }
+
+    .impact-text .countries{
+        width: 75%;
+        float: left;
+    }
+    .impact-text .countries .ger img{
+        width: 90%;
+        padding: 15px;
+    }
+    
+    .impact-text .countries .eng img{
+        width:88%;
+        padding: 10px;
+    }
+    .impact-text .countries .ind img{
+        width: 83%;
+        padding: 10px 12px;
+    }
+    .impact-text .countries .nig img{
+        width: 83%;
+        padding: 10px 11px;
+    }
+    .impact-text .countries .usa img{
+        width: 78%;
+        padding: 10px 12px;
+    }
+
+    .impact-image {
+        text-align: right;
+    }
+
+    .impact-image img{
+        width: 70%;
+    }
+
+    .impact-text h2{
+        line-height: 50px;
+        font-size: 40px;
+    }
+
+    .impact-section-two{
+        
+        padding: 90px 90px;
+    }
+
+    .line-1{
+        display: block;
+        position: absolute;
+        top: 165px;
+        right: 0;
+        z-index: -1;
+
+    }
+
+    .skills,
+    .companies{
+        width: 85%;
+    }
+    
+    .skills h2,
+    .companies h2{
+        font-size: 40px;
+        text-align: left;
+        width: 52%;
+        line-height: 49px;
+    }
+
+    .why-us{
+        padding: 90px 90px;
+    }
+
+    .why-us h2{
+        font-size: 40px;
+    }
+
+    .rope{
+        position: absolute;
+        top: 44%;
+        left: 0%;
+        width: 32%;
+    }
+
+    .card{
+        padding: 50px 30px;
+    }
+
+    .card-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr .7fr;
+        grid-template-areas: 
+        'people people mech mech hand hand'
+        '.write write many many.';
+        row-gap: 25px;
+        column-gap: 20px;
+        margin-bottom: 80px;
+    }
+
+    .why-us .btn-div{
+        margin: 0 auto;
+    }
+
+    .footer{
+        padding: 0 50px;
+    }
+
+    .footer-container{
+        display: grid;
+        grid-template-columns: 1fr .27fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        'footer-logo footer-links';
+        gap: 15px;
+        padding-left: 200px;
+        text-align: left;
+    }
+
+    .footer-container-1{
+        display: grid;
+        grid-template-columns: 1fr .15fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        'copyright zuri-email';
+        gap: 15px;
+        padding-top: 30px;
+        text-align: left;
+    }
+}
