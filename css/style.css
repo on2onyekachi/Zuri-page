@@ -1,0 +1,450 @@
+@font-face {
+    font-family: Averta;
+    src: url(https://res.cloudinary.com/dafsch2zs/raw/upload/v1596618987/Zuri%20Landing/AvertaDemoPECuttedDemo-Regular_dghpn7.otf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Averta, sans-serif;
+    text-decoration: none;
+}
+
+a{
+    color:#E7332B;
+}
+
+a:hover{
+    color: #eb5850;
+}
+
+.hero-container{
+    background-image: url("../images/hero-bg.svg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 750px;
+}
+
+.logo-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 119px;
+    padding-bottom: 29px;
+    margin-bottom: 63px;
+}
+
+.hero{
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.hero h2{
+    font-size:2.1rem;
+    font-weight: 800;
+    color: #514949;
+    margin-bottom: 2.5rem;
+}
+
+.hero p{
+    font-size: 1.2rem;
+    color: #514949;
+    opacity: .9;
+}
+
+.btn-div{
+    margin-top: 92px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    'btn-red'
+    'btn-red-outline';
+    gap: 25px;
+}
+
+.btn{
+    padding: 13px 28px;
+    border: none;
+    outline: none;
+    background: transparent;
+    border: 1px solid #E7332B;
+    font-size: 1rem;
+    cursor: pointer;
+    
+}
+
+.btn-red{
+    grid-area: btn-red;
+    background-color: #E7332B;
+    color: #fff;
+    transition: .3s;
+}
+
+.btn-red:hover{
+    background-color: #fff;
+    color: #E7332B;
+}
+
+.btn-red-outline{
+    grid-area: btn-red-outline;
+    background-color: #fff;
+    color: #E7332B;
+    transition: .3s;
+}
+
+.btn-red-outline:hover{
+    background-color: #E7332B;
+    color: #fff;
+}
+
+.programs{
+    margin-bottom: 270px;
+}
+
+.program-content{
+    /* border: 1px solid blue; */
+}
+
+.program-content-header{
+    /* border: 1px solid red; */
+    text-align: center;
+    margin-top: 48px;
+}
+
+.program-content-header .heading{
+    font-size: 14px;
+    line-height: 24px;
+    color: #E7332B;
+    font-weight: normal;
+}
+
+.program-content-header .slogan{
+    font-size: 24px;
+    line-height: 40px;
+    color: #514949;
+    margin-top: 8px;
+    margin-bottom: 85px;
+}
+
+.program-card{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr;
+    grid-template-areas: 
+    'training'
+    'internship'
+    'talent';
+    gap: 45px;
+    padding: 0 30px;
+    z-index: 1;
+}
+
+.left-pattern{
+    position: absolute;
+    width: 340px;
+    top: -60px;
+    z-index: -1;
+}
+
+.right-pattern{
+    position: absolute;
+    width: 340px;
+    bottom: -60px;
+    right: 0;
+    z-index: -1;
+}
+
+.card{
+    background-color: #FFFAFA;
+    padding: 61px 47px 85px 36px;
+}
+
+.training{
+    grid-area: training;
+}
+
+.training-body{
+
+}
+
+.training-body img,
+.internship-body img,
+.talent-body img{
+    margin-bottom: 48px;
+}
+
+.training-body p,
+.internship-body p,
+.talent-body p{
+    font-size: 16px;
+    line-height: 24px;
+    color: #514949;
+    opacity: .9;
+    font-weight: normal;
+    margin-bottom: 25px;
+}
+
+.training-body h3 a,
+.internship-body h3 a,
+.talent-body h3 a{
+    font-size: 16px;
+    line-height: 24px;
+    color: #E7332B;
+    opacity: .9;
+    font-weight: normal;
+}
+
+.training-body h3 a:hover,
+.internship-body h3 a:hover,
+.talent-body h3 a:hover{
+    text-decoration: underline;
+}
+
+
+.internship{
+    grid-area: internship;
+}
+
+.talent{
+    grid-area: talent;
+}
+
+.footer{
+    text-align: ;
+}
+
+.footer-grid-container{
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.4fr 0.8fr 0.8fr 0.8fr;
+    grid-template-areas: 
+    'footer-logo'
+    'links'
+    'address'
+    'follow-us-links';
+    gap: 10px;
+    padding-bottom: 10px;
+    padding-top: 40px;
+}
+
+.footer-logo{
+    grid-area: footer-logo;
+}
+
+.footer-logo img{
+    width: 150px;
+}
+
+.links{
+    grid-area: links;
+}
+
+.links h3,
+.address h3,
+.follow-us-links h3{
+    font-size: 24px;
+    color: #514949;
+    line-height: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.links a,
+.address a{
+    margin-bottom: 10px;
+    line-height: 30px;
+    font-size: 15px;
+}
+
+.address{
+    grid-area: address;
+}
+
+.address p{
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #514949;
+    font-weight: normal;
+}
+
+.follow-us-links{
+    grid-area: follow-us-links;
+}
+
+.follow-us-links img{
+    width: 18px;
+    margin-right: 5px;
+}
+
+.break hr{
+    opacity: .2;
+    border: .7px solid #514949;
+}
+
+
+.copyright p{
+    font-size: 1rem;
+    font-weight: bolder;    
+    margin-top: 32px;
+    color: #514949;    
+    text-align: center;
+}
+
+.copyright{
+    color: #E7332B;
+    margin-top: 0;
+    padding-bottom: 120px;
+}
+
+
+@media only screen and (min-width: 500px){
+    .hero{
+        padding: 0 40px;
+    }
+}
+
+
+@media only screen and (min-width: 768px){
+    .hero-container{
+        padding-top: 15px;
+    }
+    .logo-image{
+        padding-top: 53px;
+    }
+    
+    .hero{
+        padding: 0;
+        width: 705px;
+    }
+
+    .hero h2{
+        font-size: 32px;
+    }
+    
+    .btn-div{
+        display: grid;
+        place-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        'btn-red btn-red-outline';
+        column-gap: 0;
+        width: 540px;
+    }
+
+    .programs{
+        margin-bottom: 220px;
+    }
+
+    .program-content-header{
+        margin-top: 130px;
+    }
+
+    .footer-grid-container{
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 0.7fr 1.2fr 0.7fr;
+        grid-template-areas: 
+        'footer-logo links address follow-us-links';
+        gap: 0px;
+        text-align: left;
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+
+    .footer-logo img{
+        width: 110px;
+
+    }
+
+    .links h3,
+    .address h3{
+        font-size: 17px;
+        margin-bottom: 10px;
+        text-align: left;
+    }
+    .follow-us-links h3{
+        text-align: left;
+        font-size: 17px;
+    }
+
+
+    .links a,
+    .address a{
+        margin-bottom: 5px;
+        line-height: 30px;
+        font-size: 15px;
+        text-align: left;
+    }
+
+    .address p{
+        margin-bottom: 10px;
+        font-size: 14px;
+        color: #514949;
+        font-weight: normal;
+        text-align: left;
+    }
+    
+    .break{
+        margin-top: 70px;
+        padding: 0 20px;
+    }
+
+    .copyright p{
+        font-size: 16px;
+    }
+
+}
+
+@media only screen and (min-width: 992px){
+
+    body{
+        overflow-x: hidden;
+    }
+    .hero-container{
+        height: 800px;
+    }
+    
+    .program-card{
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+        'training internship talent';
+        gap: 30px;
+        padding: 0 30px;
+        margin: 0;
+    }
+
+    .left-pattern{
+        position: absolute;
+        width: 340px;
+        top: -60px;
+        left: -80px;
+        z-index: -1;
+    }
+
+    .right-pattern{
+        position: absolute;
+        width: 340px;
+        top: -60px;
+        right: -80px;
+        z-index: -1;
+    }
+}
+
+
+
+
+
+
+
+
