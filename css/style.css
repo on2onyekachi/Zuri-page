@@ -39,11 +39,11 @@ a:hover{
 .hero{
     text-align: center;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 10px;
 }
 
 .hero h2{
-    font-size:2.1rem;
+    font-size:1.7rem;
     font-weight: 800;
     color: #514949;
     margin-bottom: 2.5rem;
@@ -215,7 +215,7 @@ a:hover{
 }
 
 .footer{
-    text-align: ;
+    text-align: center ;
 }
 
 .footer-grid-container{
